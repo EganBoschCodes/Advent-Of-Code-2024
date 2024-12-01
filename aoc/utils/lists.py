@@ -4,16 +4,6 @@ def filter_none[T](lst: list[T | None]) -> list[T]:
     output: list[T] = [i for i in lst if i is not None]
     return output
 
-def unite_short_sublists[T](sparse_list: list[list[T]], threshold = 15) -> list[list[T]]:
-    united_list, sparse_list = [sparse_list[0]], sparse_list[1:]
-    while len(sparse_list) > 0:
-        new_item, sparse_list = sparse_list[0], sparse_list[1:]
-        if len(new_item) < 15:
-            united_list[-1] += new_item
-        else:
-            united_list.append(new_item)
-    return united_list
-
 def find_first[T](lst: list[T], condition: Callable[[T], bool]) -> T:
     for item in lst:
         if condition(item):
