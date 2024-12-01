@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: aoc
+Version: 0.0.0
+Summary: A python package containing solutions for Advent of Code 2024.
+Home-page: https://github.com/Egan-Bosch-Codes/Advent-Of-Code-2024
+Author: Egan Bosch
+Author-email: egan.bosch@madiba.com
+Requires-Dist: pandas
+Requires-Dist: python-dotenv
